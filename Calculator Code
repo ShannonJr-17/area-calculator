@@ -1,0 +1,33 @@
+print('================')
+print('Area Calculator')
+print('================')
+
+print('Select a given option')
+userPick = int(input("1)TRIANGLE\n"+
+"2)RECTANGLE\n"+
+"3)SQUARE\n"+
+"4)CIRCLE\n"+
+"5)QUIT\n"+
+"Enter Your Choice: "))
+print('================')
+if userPick == 1:
+  base = float(input('Triangle Base :'))
+  height = float (input('Triangle Height : '))
+  area = base * height / 2
+  print("Area = " , area)
+if userPick == 2:
+  length = float(input('Rectangle length :'))
+  width = float (input('Rectangle width : '))
+  area = length * width
+  print("Area = " , area)
+if userPick == 3:
+  side = float(input('Squares side length :'))
+  area = side * side
+  print("Area = " , area)
+if userPick == 4:
+  radius = float (input('Circle radius: '))
+  radius2 = radius * radius
+  area = 3.14 * radius2
+  print("Area = " , area)
+if userPick == 5:
+  print("Thank you for visiting!!")
